@@ -1,0 +1,11 @@
+.counter {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.count {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+  font-size: 55px !important;
+  color: white !important;
+}

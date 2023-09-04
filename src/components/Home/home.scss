@@ -1,0 +1,243 @@
+.homeContainer {
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(9px);
+    z-index: 111;
+    border-bottom: 0.5px solid #ccc;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 5%;
+    height: 70px;
+    z-index: 111;
+    background-color: black;
+    .left {
+      display: flex;
+      gap: 50px;
+      ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        li {
+          color: white;
+          font-weight: 500;
+          font-size: 20px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          :hover {
+            color: rgb(185, 40, 40);
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      gap: 20px;
+      p {
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+  #bodyContainer {
+    margin: 0 auto;
+    width: 90%;
+    #brandName_container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 15%;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        color: white;
+        p:first-child {
+          font-size: 20px;
+        }
+        .brandTitle {
+          font-size: 55px;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          span {
+            display: flex;
+            align-items: center;
+          }
+        }
+        .ourMission {
+          font-weight: 200;
+        }
+        .brandCap {
+          font-size: 26px;
+          color: rgb(185, 40, 40);
+        }
+        button {
+          width: 150px;
+          padding: 15px;
+          background-color: rgb(185, 40, 40);
+          border: none;
+          color: white;
+          font-weight: bold;
+          font-size: 15px;
+          border-radius: 6px;
+        }
+        button:hover {
+          background-color: rgb(187, 27, 27);
+        }
+      }
+      .right {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        color: white;
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          p {
+            font-size: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            gap: 10px;
+            span {
+              font-size: 25px;
+              color: rgb(185, 40, 40);
+            }
+          }
+          span {
+            font-size: 15px;
+            text-align: end;
+          }
+        }
+      }
+    }
+    #buyContainer {
+      width: 100%;
+      padding: 50px 50px;
+      margin: 50px 0;
+      margin-top: 5%;
+      .content {
+        h1 {
+          text-align: center;
+          font-weight: 500;
+          font-size: 50px;
+        }
+        .buySection {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 85px;
+          margin: 50px 0;
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid white;
+            padding: 10px;
+            box-shadow: 1px 1px 6px #979292;
+          }
+          p {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+          }
+          img {
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+    }
+    #sellContainer {
+      width: 100%;
+      padding: 0px 50px;
+      .content {
+        h1 {
+          text-align: center;
+          font-weight: 500;
+          font-size: 50px;
+        }
+        .buySection {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 85px;
+          margin: 50px 0;
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid white;
+            padding: 10px;
+            box-shadow: 1px 1px 6px #979292;
+          }
+          p {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+          }
+          img {
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+    }
+    #donate-container {
+      .don-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin: 50px;
+        justify-content: center;
+        .don-box {
+          height: 300px;
+          width: 250px;
+          padding: 30px;
+          background-color: rgb(20, 20, 20);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 6px;
+          gap: 20px;
+          box-shadow: 0 0 8px #3b3333;
+          transition: all 0.3s ease-out;
+
+          img {
+            width: 100px;
+            height: 100px;
+            :hover {
+              transform: scale(1.1);
+              transition: all 1s;
+            }
+          }
+          a {
+            padding: 15px;
+            background-color: tomato;
+            text-decoration: none;
+            color: white;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+  .footbar {
+    h1 {
+      display: flex;
+      align-items: center;
+    }
+    border-top: 0.5px solid #262626;
+    padding: 20px 50px;
+  }
+}
